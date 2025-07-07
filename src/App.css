@@ -1,7 +1,45 @@
+h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: 'Markazi Text', serif;
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
 .HEADER {
   display: flex;
   padding: 0 60px;
   background-color: #fff;
+}
+
+.HEADER .logo {
+  flex: 1;
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -19,25 +57,16 @@
 }
 
 .HERO-SECTION h1 {
-  font-family: 'Markazi Text', 'serif';
-  font-size: 48px;
-  font-weight: normal;
   color: #f4ce14;
   margin-bottom: 0;
 }
 
 .HERO-SECTION h2 {
-  font-family: 'Markazi Text', 'serif';
-  font-size: 32px;
-  font-weight: normal;
   color: #ffffff;
   margin-top: 0;
 }
 
 .HERO-SECTION p {
-  font-family: 'Karla', 'Inter', 'sans-serif';
-  font-size: 20px;
-  font-weight: normal;
   color: #ffffff;
 }
 
@@ -51,7 +80,7 @@
 }
 
 .hero-image img {
-  width: 60%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
 }
@@ -61,9 +90,16 @@
 }
 
 .ant-card {
-  background-color: #EDEFEE;
-  border-radius: 10px;
-  }
+  background-color: #e8e8e8;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.ant-card .price {
+  font-weight: bold;
+  font-size: 20px;
+  color: #EE9972;
+}
 
 a {
   color: #333;
@@ -79,10 +115,7 @@ a:hover {
 }
 
 .SPECIALS-SECTION h2 {
-  font-family: 'Markazi Text', 'serif';
-  font-size: 32px;
-  font-weight: normal;
-  color: #000000;
+  padding: 0 0 20px 0;
 }
 
 .SPECIALS-SECTION p {
