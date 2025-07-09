@@ -8,7 +8,7 @@ function HeaderComponent() {
     return (
         <Header className="header">
             <div className="header_logo">
-                <img src="/Small_Logo.png" alt="Little Lemon Logo" style={{ height: 30 }} />
+                <img src="/Small_Logo.png" alt="Little Lemon Logo"/>
             </div>
             <Menu mode='horizontal' className="header_menu" overflowedIndicator={null}>
                 <Menu.Item key="home">Home</Menu.Item>

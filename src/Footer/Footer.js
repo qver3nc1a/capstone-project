@@ -9,7 +9,7 @@ function FooterComponent() {
         <Footer>
         <div className="footer">
           <div className="footer_logo">
-            <img src="/Bigger_Logo.png" alt="Little Lemon Logo" style={{ height: 300 }} />
+            <img src="/Bigger_Logo.png" alt="Little Lemon Logo"/>
           </div>
           <div className="footer_nav">
             <div className="footer_nav_doormat-navigation">
