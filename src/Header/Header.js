@@ -6,11 +6,11 @@ const { Header } = Layout;
 
 function HeaderComponent() {
     return (
-        <Header className="HEADER">
-            <div className="logo">
+        <Header className="header">
+            <div className="header_logo">
                 <img src="/Small_Logo.png" alt="Little Lemon Logo" style={{ height: 30 }} />
             </div>
-            <Menu mode='horizontal' className="menu" overflowedIndicator={null}>
+            <Menu mode='horizontal' className="header_menu" overflowedIndicator={null}>
                 <Menu.Item key="home">Home</Menu.Item>
                 <Menu.Item key="about">About</Menu.Item>
                 <Menu.Item key="menu">Menu</Menu.Item>

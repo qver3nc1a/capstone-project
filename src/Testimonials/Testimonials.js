@@ -7,7 +7,7 @@ const { Content } = Layout;
 function TestimonialsComponent() {
     return (
         <Content>
-            <section className='TESTIMONIALS-SECTION'>
+            <section className='testimonials'>
                 <h2>Testimonials</h2>
                 <Row gutter={[24, 24]}>
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
@@ -31,7 +31,7 @@ function TestimonialsComponent() {
                     </Card>
                     </Col>
                 </Row>
-                <div className='TESTIMONIALS-CTA'>
+                <div className='testimonials_cta'>
                     <Button type="primary">Leave a Testimonial</Button>
                 </div>
             </section>

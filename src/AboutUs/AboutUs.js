@@ -6,15 +6,15 @@ const { Content } = Layout;
 
 function AboutUsComponent() {
     return (
-        <section className='ABOUT-SECTION'>
-          <div className='about-text'>
+        <section className='about-us'>
+          <div className='about-us_text'>
             <h2>About Us</h2>
             <p>Little Lemon is a family-owned Mediterranean restaurant located in the heart of Chicago.</p>
             <p>We are committed to providing our customers with the best dining experience, using only the freshest ingredients and traditional recipes.</p>
             <p>Our team is passionate about food and hospitality, ensuring that every visit is memorable.</p>
             <p>Join us for a meal and experience the warmth of our family atmosphere.</p>
           </div>
-          <div className='about-image'>
+          <div className='about-us_image'>
             <img src="/Owners.webp" alt="Owners"/>
           </div>
         </section>

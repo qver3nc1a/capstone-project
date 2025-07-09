@@ -7,12 +7,12 @@ const { Footer } = Layout;
 function FooterComponent() {
     return (
         <Footer>
-        <div className="footer-content">
-          <div className="footer-logo">
+        <div className="footer">
+          <div className="footer_logo">
             <img src="/Bigger_Logo.png" alt="Little Lemon Logo" style={{ height: 300 }} />
           </div>
-          <div className="footer-nav">
-            <div className="footer-section">
+          <div className="footer_nav">
+            <div className="footer_nav_doormat-navigation">
               <h4>Doormat Navigation</h4>
               <ul>
                 <li><a href="#home">Home</a></li>
@@ -23,7 +23,7 @@ function FooterComponent() {
                 <li><a href="#login">Login</a></li>
               </ul>
             </div>
-            <div className="footer-section">
+            <div className="footer_nav_contact-information">
               <h4>Contact Information</h4>
               <ul>
                 <li><a href="address">address</a></li>
@@ -31,7 +31,7 @@ function FooterComponent() {
                 <li><a href="email">email</a></li>
               </ul>
             </div>
-            <div className="footer-section">
+            <div className="footer_nav_social-media">
               <h4>Social Media</h4>
               <ul>
                 <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>

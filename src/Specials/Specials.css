@@ -1,0 +1,39 @@
+.specials {
+  padding: 30px 60px 30px 60px;
+}
+
+.ant-card {
+  background-color: #e8e8e8;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.ant-card .price {
+  font-weight: bold;
+  font-size: 20px;
+  color: #EE9972;
+}
+
+a {
+  color: #333;
+  font-family: 'Karla', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #EE9972;
+  text-decoration: underline;
+}
+
+.specials h2 {
+  padding: 0 0 20px 0;
+}
+
+.specials p {
+  font-family: 'Karla', 'Inter', 'sans-serif';
+  font-size: 20px;
+  font-weight: normal;
+  color: #000000;
+}
