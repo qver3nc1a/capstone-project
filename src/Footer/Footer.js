@@ -5,6 +5,27 @@ import './Footer.css';
 const { Footer } = Layout;
 
 function FooterComponent() {
+    const doormatNavLinks = [
+        { label: 'Home', href: '#home' },
+        { label: 'About', href: '#about' },
+        { label: 'Menu', href: '#menu' },
+        { label: 'Reservations', href: '#reservations' },
+        { label: 'Order Online', href: '#order-online' },
+        { label: 'Login', href: '#login' },
+    ];
+
+    const contactInfoNavLinks = [
+        { label: 'Address', href: '#address' },
+        { label: 'Phone Number', href: '#phone' },
+        { label: 'Email', href: '#email' },
+    ]
+
+    const socialMediaNavLinks = [
+        { label: 'Facebook', href: 'https://facebook.com' },
+        { label: 'Instagram', href: 'https://instagram.com' },
+        { label: 'Twitter', href: 'https://twitter.com' },
+    ];
+
     return (
         <Footer>
         <div className="footer">
@@ -15,28 +36,31 @@ function FooterComponent() {
             <div className="footer_nav_doormat-navigation">
               <h4>Doormat Navigation</h4>
               <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-                <li><a href="#order-online">Order Online</a></li>
-                <li><a href="#login">Login</a></li>
+                {doormatNavLinks.map(({ label, href }) => (
+                  <li key={href}>
+                    <a href={href}>{label}</a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="footer_nav_contact-information">
               <h4>Contact Information</h4>
               <ul>
-                <li><a href="address">address</a></li>
-                <li><a href="tel">phone number</a></li>
-                <li><a href="email">email</a></li>
+                {contactInfoNavLinks.map(({ label, href }) => (
+                  <li key={href}>
+                    <a href={href}>{label}</a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="footer_nav_social-media">
               <h4>Social Media</h4>
               <ul>
-                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                {socialMediaNavLinks.map(({ label, href }) => (
+                  <li key={href}>
+                    <a href={href} target="_blank" rel="noopener noreferrer">{label}</a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
