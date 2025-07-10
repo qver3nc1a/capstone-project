@@ -1,0 +1,14 @@
+.testimonials {
+  padding: 30px 60px 30px 60px;
+}
+
+.testimonials h2 {
+  font-family: 'Markazi Text', 'serif';
+  font-size: 32px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.testimonials_cta {
+  margin-top: 20px;
+}

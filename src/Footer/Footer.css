@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  padding: 30px 60px 30px 60px;
+}
+
+.footer_logo {
+  flex: 1
+}
+
+.footer_nav {
+  flex: 1;
+}
