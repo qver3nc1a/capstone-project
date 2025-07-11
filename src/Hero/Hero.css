@@ -2,23 +2,23 @@
   display: flex;
   align-items: center;
   text-align: left;
-  background-color: #495E57;
+  background-color: var(--green);
   width: 100%;
-  padding: 30px 60px 30px 60px;
+  padding: 0 60px 60px 60px;
 }
 
 .hero h1 {
-  color: #f4ce14;
+  color: var(--yellow);
   margin-bottom: 0;
 }
 
 .hero h2 {
-  color: #ffffff;
+  color: var(--white);
   margin-top: 0;
 }
 
 .hero p {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .hero_text {
@@ -28,10 +28,15 @@
 .hero_image {
   flex: 1;
   text-align: right;
+  margin-top: 60px;
 }
 
 .hero_image img {
   width: 80%;
   height: auto;
   border-radius: 10px;
+}
+
+.hero_button {
+  margin-top: 10px;
 }

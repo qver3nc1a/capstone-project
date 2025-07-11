@@ -2,13 +2,16 @@
   padding: 30px 60px 30px 60px;
 }
 
-.testimonials h2 {
-  font-family: 'Markazi Text', 'serif';
-  font-size: 32px;
-  font-weight: normal;
-  color: #000000;
+.testimonials_cta {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.testimonials_cta {
+.ant-card-meta-description {
+    font-size: var(--p-font-size);
+    color: var(--dark-gray);
+}
+
+.ant-card {
   margin-top: 20px;
 }

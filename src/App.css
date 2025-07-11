@@ -1,39 +1,59 @@
+:root {
+  --green: #495E57;
+  --yellow: #f4ce14;
+  --orange: #EE9972;
+  --light-gray: #e8e8e8;
+  --dark-gray: #333333;
+  --white: #ffffff;
+  --markazi-text: 'Markazi Text', serif;
+  --karla: 'Karla', sans-serif;
+  --h1-font-size: 64px;
+  --h2-font-size: 48px;
+  --h3-font-size: 32px;
+  --h4-font-size: 24px;
+  --p-font-size: 18px;
+  --btn-primary-bg: #f4ce14;
+  --btn-primary-color: #333;
+  --btn-primary-hover-bg: #e0b800;
+  --btn-primary-hover-color: #333;
+}
+
 h1 {
-  font-family: 'Markazi Text', serif;
-  font-size: 64px;
+  font-family: var(--markazi-text);
+  font-size: var(--h1-font-size);
   font-weight: normal;
 }
 
 h2 {
-  font-family: 'Markazi Text', serif;
-  font-size: 48px;
+  font-family: var(--markazi-text);
+  font-size: var(--h2-font-size);
   font-weight: normal;
   margin-bottom: 0;
 }
 
 h3 {
-  font-family: 'Markazi Text', serif;
-  font-size: 32px;
+  font-family: var(--markazi-text);
+  font-size: var(--h3-font-size);
   font-weight: normal;
   margin-top: 0;
 }
 
 p {
-  font-family: 'Karla', sans-serif;
-  font-size: 18px;
+  font-family: var(--karla);
+  font-size: var(--p-font-size);
   font-weight: normal;
 }
 
 .ant-btn-primary {
-  background: #f4ce14;
+  background: var(--btn-primary-bg);
   border: none;
-  color: #333;
+  color: var(--btn-primary-color);
   font-weight: bold;
   border-radius: 10px;
 }
 
 .ant-btn-primary:hover {
-  background: #e0b800 !important;
-  color: #333 !important;
-  border-color: #e0b800 !important;
+  background: var(--btn-primary-hover-bg) !important;
+  color: var(--btn-primary-hover-color) !important;
+  border-color: var(--btn-primary-hover-bg) !important;
 }
