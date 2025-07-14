@@ -1,33 +1,24 @@
 .about-us {
   display: flex;
   padding: 30px 60px 30px 60px;
-}
-
-.about-us h2 {
-  font-family: 'Markazi Text', 'serif';
-  font-size: 32px;
-  font-weight: normal;
-  color: #000000;
-}
-
-.about-us p {
-  font-family: 'Karla', 'Inter', 'sans-serif';
-  font-size: 20px;
-  font-weight: normal;
-  color: #000000;
+  background-color: var(--green);
 }
 
 .about-us_text {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  color: var(--white);
 }
 .about-us_image {
   flex: 1;
   text-align: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about-us_image img {
-  width: 60%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
 }

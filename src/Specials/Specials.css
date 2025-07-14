@@ -3,27 +3,39 @@
 }
 
 .ant-card {
-  background-color: #e8e8e8;
+  background-color: var(--light-gray);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
 
-.ant-card .price {
+.ant-card .specials_greek-salad_price {
   font-weight: bold;
-  font-size: 20px;
-  color: #EE9972;
+  font-size: var(--h4-font-size);
+  color: var(--orange);
+}
+
+.ant-card .specials_bruschetta_price {
+  font-weight: bold;
+  font-size: var(--h4-font-size);
+  color: var(--orange);
+}
+
+.ant-card .specials_lemon-dessert_price {
+  font-weight: bold;
+  font-size: var(--h4-font-size);
+  color: var(--orange);
 }
 
 a {
-  color: #333;
-  font-family: 'Karla', Arial, sans-serif;
-  font-size: 20px;
+  color: var(--dark-gray);
+  font-family: var(--karla);
+  font-size: var(--p-font-size);
   font-weight: normal;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #EE9972;
+  color: var(--orange);
   text-decoration: underline;
 }
 
@@ -32,8 +44,27 @@ a:hover {
 }
 
 .specials p {
-  font-family: 'Karla', 'Inter', 'sans-serif';
-  font-size: 20px;
+  font-family: var(--karla);
+  font-size: var(--p-font-size);
   font-weight: normal;
-  color: #000000;
+  color: var(--dark-gray);
+}
+
+.specials_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.specials_menu-link {
+    font-family: var(--karla);
+    font-size: var(--h4-font-size);
+    font-weight: normal;
+    color: var(--dark-gray);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.specials_menu-link:hover {
+  color: var(--orange);
 }
