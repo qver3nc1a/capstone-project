@@ -1,15 +1,19 @@
 import React from 'react';
-import { Form, Input, Button, DatePicker, TimePicker, InputNumber } from 'antd';
+import { Form, Input, Button, DatePicker, TimePicker, Select, InputNumber } from 'antd';
 import './ReservationForm.css';
 import { useNavigate } from 'react-router-dom';
 
 
-function ReservationForm() {
+function ReservationForm({ availableTimes = [], dispatch }) {
     const navigate = useNavigate();
 
     const onFinish = (values) => {
         console.log('Form values:', values);
         navigate('/');
+    };
+
+    const handleDateChange = (date) => {
+        dispatch({ type: 'update', date });
     };
 
     return (
@@ -49,7 +53,7 @@ function ReservationForm() {
             label='Date'
             rules={[{ required: true, message: 'Please select a date!' }]}
             >
-            <DatePicker style={{ width: '100%' }} />
+            <DatePicker style={{ width: '100%' }} onChange={handleDateChange} />
         </Form.Item>
 
         <Form.Item
@@ -57,7 +61,13 @@ function ReservationForm() {
             label='Time'
             rules={[{ required: true, message: 'Please select a time!' }]}
             >
-            <TimePicker style={{ width: '100%' }} />
+            <Select placeholder='Select a time'>
+                {availableTimes.map((time) => (
+                    <Select.Option key={time} value={time}>
+                        {time}
+                    </Select.Option>
+                ))}
+            </Select>
         </Form.Item>
 
         <Form.Item
