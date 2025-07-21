@@ -34,7 +34,7 @@ function FooterComponent() {
           </div>
           <div className="footer_nav">
             <div className="footer_nav_doormat-navigation">
-              <h4>Doormat Navigation</h4>
+              <h3>Doormat Navigation</h3>
               <ul>
                 {doormatNavLinks.map(({ label, href }) => (
                   <li key={href}>
@@ -44,7 +44,7 @@ function FooterComponent() {
               </ul>
             </div>
             <div className="footer_nav_contact-information">
-              <h4>Contact Information</h4>
+              <h3>Contact Information</h3>
               <ul>
                 {contactInfoNavLinks.map(({ label, href }) => (
                   <li key={href}>
@@ -54,7 +54,7 @@ function FooterComponent() {
               </ul>
             </div>
             <div className="footer_nav_social-media">
-              <h4>Social Media</h4>
+              <h3>Social Media</h3>
               <ul>
                 {socialMediaNavLinks.map(({ label, href }) => (
                   <li key={href}>
