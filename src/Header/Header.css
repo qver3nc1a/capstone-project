@@ -1,27 +1,25 @@
 .header {
-    display: flex;
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .header_logo {
-    flex: 1;
-    display: flex;
-    max-width: 300px;
-    padding: 10px;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.header_logo img {
+  max-height: 50px;
+  width: auto;
 }
 
 .header_menu {
-    display: flex;
-    flex: 2;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    color: var(--dark-gray);
-    font-family: var(--karla);
-    font-size: var(--p-font-size);
-    font-weight: bold;
+  justify-content: space-evenly;
+  font-family: var(--karla);
+  font-size: var(--p-font-size);
+  font-weight: bold;
+  color: var(--dark-gray);
 }
 
 .header_menu :hover {
-    color: var(--yellow);
+  color: var(--yellow);
 }

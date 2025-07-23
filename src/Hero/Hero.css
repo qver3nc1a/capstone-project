@@ -1,10 +1,7 @@
 .hero {
-  display: flex;
-  align-items: center;
-  text-align: left;
   background-color: var(--green);
   width: 100%;
-  padding: 0 60px 60px 60px;
+  padding: var(--section-padding);
 }
 
 .hero h1 {
@@ -21,12 +18,7 @@
   color: var(--white);
 }
 
-.hero_text {
-  flex: 1;
-}
-
 .hero_image {
-  flex: 1;
   text-align: right;
   margin-top: 60px;
 }
