@@ -3,6 +3,9 @@ import { Form, Input, Button, DatePicker, TimePicker, Select, InputNumber } from
 import './ReservationForm.css';
 import { useNavigate } from 'react-router-dom';
 
+function required(fieldName) {
+  return { required: true, message: `Please select a ${fieldName}!` }
+}
 
 function ReservationForm({ availableTimes = [], dispatch }) {
     const navigate = useNavigate();
@@ -27,7 +30,7 @@ function ReservationForm({ availableTimes = [], dispatch }) {
         <Form.Item
             name='name'
             label='Name'
-            rules={[{ required: true, message: 'Please enter your name!' }]}
+            rules={[required('name')]}
             >
             <Input placeholder='Enter your name' />
         </Form.Item>
@@ -35,7 +38,7 @@ function ReservationForm({ availableTimes = [], dispatch }) {
         <Form.Item
             name='email'
             label='Email'
-            rules={[{ required: true, type: 'email', message: 'Please enter a valid email!' }]}
+            rules={[required('email')]}
             >
             <Input placeholder='Enter your email' />
         </Form.Item>
@@ -43,7 +46,7 @@ function ReservationForm({ availableTimes = [], dispatch }) {
         <Form.Item
             name='phone'
             label='Phone Number'
-            rules={[{ required: true, message: 'Please enter your phone number!' }]}
+            rules={[required('phone')]}
             >
             <Input placeholder='Enter your phone number' />
         </Form.Item>
@@ -51,7 +54,7 @@ function ReservationForm({ availableTimes = [], dispatch }) {
         <Form.Item
             name='date'
             label='Date'
-            rules={[{ required: true, message: 'Please select a date!' }]}
+            rules={[required('date')]}
             >
             <DatePicker style={{ width: '100%' }} onChange={handleDateChange} />
         </Form.Item>
@@ -59,7 +62,7 @@ function ReservationForm({ availableTimes = [], dispatch }) {
         <Form.Item
             name='time'
             label='Time'
-            rules={[{ required: true, message: 'Please select a time!' }]}
+            rules={[required('time')]}
             >
             <Select placeholder='Select a time'>
                 {availableTimes.map((time) => (
@@ -73,7 +76,7 @@ function ReservationForm({ availableTimes = [], dispatch }) {
         <Form.Item
             name='guests'
             label='Number of Guests'
-            rules={[{ required: true, message: 'Please enter the number of guests!' }]}
+            rules={[required('number of guests')]}
             >
             <InputNumber min={1} max={20} style={{ width: '100%' }} />
         </Form.Item>
