@@ -11,7 +11,7 @@ function TestimonialsComponent() {
                 <h2>Testimonials</h2>
                 <Row gutter={[24, 24]}>
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
-                    <Card style={{ width: '100%' }}>
+                    <Card>
                         <Card.Meta
                             avatar={<Avatar src="/CoolGirl_Avatar.png" />}
                             title = 'Jade'
@@ -20,7 +20,7 @@ function TestimonialsComponent() {
                     </Card>
                     </Col>
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
-                    <Card style={{ width: '100%' }}>
+                    <Card>
                         <Card.Meta
                             avatar={<Avatar src="/Man_Avatar.png" />}
                             title = 'Xavier'
@@ -29,7 +29,7 @@ function TestimonialsComponent() {
                     </Card>
                     </Col>
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
-                    <Card style={{ width: '100%' }}>
+                    <Card>
                         <Card.Meta
                             avatar={<Avatar src="/Girl_Avatar.png" />}
                             title = 'Sophie'
@@ -38,7 +38,7 @@ function TestimonialsComponent() {
                     </Card>
                     </Col>
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
-                    <Card style={{ width: '100%' }}>
+                    <Card>
                         <Card.Meta
                             avatar={<Avatar src="/CoolGuy_Avatar.png" />}
                             title = 'Peter'

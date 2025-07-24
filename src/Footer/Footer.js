@@ -27,46 +27,49 @@ function FooterComponent() {
     ];
 
     return (
-        <Footer>
-        <div className="footer">
-          <div className="footer_logo">
-            <img src="/Bigger_Logo.png" alt="Little Lemon Logo"/>
-          </div>
-          <div className="footer_nav">
-            <div className="footer_nav_doormat-navigation">
-              <h3>Doormat Navigation</h3>
-              <ul>
-                {doormatNavLinks.map(({ label, href }) => (
-                  <li key={href}>
-                    <a href={href}>{label}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="footer_nav_contact-information">
-              <h3>Contact Information</h3>
-              <ul>
-                {contactInfoNavLinks.map(({ label, href }) => (
-                  <li key={href}>
-                    <a href={href}>{label}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="footer_nav_social-media">
-              <h3>Social Media</h3>
-              <ul>
-                {socialMediaNavLinks.map(({ label, href }) => (
-                  <li key={href}>
-                    <a href={href} target="_blank" rel="noopener noreferrer">{label}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Footer>
-    );
+    <Footer className='footer'>
+      <Row>
+        <Col xs={24} md={6} lg={6} className='footer_logo'>
+          <img src='/Bigger_Logo.png' alt='Little Lemon Logo' />
+        </Col>
+
+        <Col xs={24} md={6} lg={6}>
+          <h4>Doormat Navigation</h4>
+          <ul>
+            {doormatNavLinks.map(({ label, href }) => (
+              <li key={href}>
+                <a href={href}>{label}</a>
+              </li>
+            ))}
+          </ul>
+        </Col>
+
+        <Col xs={24} sm={6} md={6}>
+          <h4>Contact Information</h4>
+          <ul>
+            {contactInfoNavLinks.map(({ label, href }) => (
+              <li key={href}>
+                <a href={href}>{label}</a>
+              </li>
+            ))}
+          </ul>
+        </Col>
+
+        <Col xs={24} sm={8} md={6}>
+          <h4>Social Media</h4>
+          <ul>
+            {socialMediaNavLinks.map(({ label, href }) => (
+              <li key={href}>
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Col>
+      </Row>
+    </Footer>
+  );
 }
 
 export default FooterComponent;

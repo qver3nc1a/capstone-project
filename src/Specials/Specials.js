@@ -8,10 +8,14 @@ function SpecialsComponent() {
     return (
         <Content>
           <section className='specials'>
-          <div className="specials_header">
-            <h2>Weekly specials!</h2>
-            <a href="/menu" className="specials_menu-link">View Online Menu</a>
-          </div>
+            <Row className="specials_header" align='middle' justify='space-between'>
+              <Col>
+                <h2>Weekly specials!</h2>
+              </Col>
+              <Col>
+                <a href="/menu" className="specials_menu-link">View Online Menu</a>
+              </Col>
+            </Row>
           <Row gutter={[24, 24]}>
             <Col xs={24} sm={12} md={8} lg={8} xl={8}>
               <Card style={{ width: '100%' }} cover={<img alt="Greek Salad" src="/Greek_Salad.jpg" />}>
