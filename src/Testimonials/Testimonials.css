@@ -1,5 +1,5 @@
 .testimonials {
-  padding: 30px 60px 30px 60px;
+  padding: var(--section-padding);
 }
 
 .testimonials_cta {
@@ -8,8 +8,8 @@
 }
 
 .ant-card-meta-description {
-    font-size: var(--p-font-size);
-    color: var(--dark-gray);
+  font-size: var(--p-font-size);
+  color: var(--dark-gray);
 }
 
 .ant-card {

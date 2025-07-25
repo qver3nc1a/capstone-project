@@ -1,8 +1,18 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App, { initializeTimes, updateTimes } from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('initializeTimes', () => {
+  test('should return the correct initial times', () => {
+    const expectedTimes = [
+      '7:00 AM',
+      '9:00 AM',
+      '12:00 PM',
+      '1:00 PM',
+      '3:00 PM',
+      '5:00 PM',
+      '7:00 PM',
+      '9:00 PM'
+    ];
+    expect(initializeTimes()).toEqual(expectedTimes);
+  });
 });
