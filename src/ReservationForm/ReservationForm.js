@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Form, Input, Button, DatePicker, TimePicker, Select, InputNumber } from 'antd';
 import './ReservationForm.css';
 import { useNavigate } from 'react-router-dom';
@@ -10,9 +10,19 @@ function required(fieldName) {
 function ReservationForm({ availableTimes = [], dispatch }) {
     const navigate = useNavigate();
 
-    const onFinish = (values) => {
-        console.log('Form values:', values);
-        navigate('/');
+    useEffect(() => {
+      dispatch({ type: 'fetchTimes' });
+    }, [dispatch]);
+
+    const submitForm = (formData) => {
+        try {
+            navigate('/confirmed', {
+                state: { reservation: formData }
+            });
+            return true;
+        } catch (error) {
+            return false;
+        }
     };
 
     const handleDateChange = (date) => {
@@ -25,7 +35,7 @@ function ReservationForm({ availableTimes = [], dispatch }) {
         <Form
             name='reservation'
             layout='vertical'
-            onFinish={onFinish}
+            onFinish={submitForm}
             >
         <Form.Item
             name='name'
