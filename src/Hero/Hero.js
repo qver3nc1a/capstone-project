@@ -1,14 +1,13 @@
 import React from 'react';
 import { Button, Row, Col } from 'antd';
 import './Hero.css';
-import { useNavigate } from 'react-router-dom';
 
 
-function HeroComponent() {
-    const navigate = useNavigate();
+function HeroComponent({ setCurrentView }) {
 
     const handleReserveTable = () => {
-        navigate('/reservation');
+        console.log('Reserve a Table button clicked');
+        setCurrentView('reservation');
     };
 
     return (
@@ -29,7 +28,7 @@ function HeroComponent() {
                 </Col>
             </Row>
         </section>
-    )
+    );
 }
 
 export default HeroComponent;
