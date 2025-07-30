@@ -1,28 +1,18 @@
 import React, { useEffect } from 'react';
 import { Form, Input, Button, DatePicker, TimePicker, Select, InputNumber } from 'antd';
 import './ReservationForm.css';
-import { useNavigate } from 'react-router-dom';
 
 function required(fieldName) {
   return { required: true, message: `Please select a ${fieldName}!` }
 }
 
-function ReservationForm({ availableTimes = [], dispatch }) {
-    const navigate = useNavigate();
-
+function ReservationForm({ availableTimes = [], dispatch , setCurrentView }) {
     useEffect(() => {
       dispatch({ type: 'fetchTimes' });
     }, [dispatch]);
 
-    const submitForm = (formData) => {
-        try {
-            navigate('/confirmed', {
-                state: { reservation: formData }
-            });
-            return true;
-        } catch (error) {
-            return false;
-        }
+    const handleSubmit = () => {
+        setCurrentView('confirmed');
     };
 
     const handleDateChange = (date) => {
@@ -35,7 +25,7 @@ function ReservationForm({ availableTimes = [], dispatch }) {
         <Form
             name='reservation'
             layout='vertical'
-            onFinish={submitForm}
+            onFinish={handleSubmit}
             >
         <Form.Item
             name='name'
