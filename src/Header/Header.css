@@ -1,5 +1,6 @@
 .header {
   background-color: #fff;
+  height: 72px;
 }
 
 .header_logo {
@@ -10,9 +11,12 @@
 .header_logo img {
   max-height: 50px;
   width: auto;
+  margin-left: 50px;
 }
 
 .header_menu {
+  height: 70px;
+  line-height: 70px;
   justify-content: space-evenly;
   font-family: var(--karla);
   font-size: var(--p-font-size);

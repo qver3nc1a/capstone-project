@@ -10,6 +10,7 @@ import SpecialsComponent from './Specials/Specials';
 import TestimonialsComponent from './Testimonials/Testimonials';
 import AboutComponent from './AboutUs/AboutUs';
 import FooterComponent from './Footer/Footer';
+import ConfirmedBooking from './ReservationForm/ConfirmedBooking';
 
 const { Content } = Layout;
 
