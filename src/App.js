@@ -1,3 +1,4 @@
+/* global fetchAPI */
 import React, { useReducer } from 'react';
 import './App.css';
 import { Layout } from 'antd';
@@ -10,24 +11,21 @@ import SpecialsComponent from './Specials/Specials';
 import TestimonialsComponent from './Testimonials/Testimonials';
 import AboutComponent from './AboutUs/AboutUs';
 import FooterComponent from './Footer/Footer';
+import ConfirmedBooking from './ReservationForm/ConfirmedBooking';
 
 const { Content } = Layout;
 
 function initializeTimes() {
-  return [
-    '7:00 AM',
-    '9:00 AM',
-    '12:00 PM',
-    '1:00 PM',
-    '3:00 PM',
-    '5:00 PM',
-    '7:00 PM',
-    '9:00 PM'
-  ];
+  const today = new Date();
+  return fetchAPI(today);
 }
 
 function updateTimes(state, action) {
-  return initializeTimes();
+  if (action.type === 'update') {
+    const date = new Date(action.date);
+    return fetchAPI(date);
+  }
+  return state;
 }
 
 function App() {
@@ -54,6 +52,7 @@ function App() {
               path="/reservation"
               element={<ReservationForm availableTimes={availableTimes} dispatch={dispatch} />}
             />
+            <Route path="/confirmed" element={<ConfirmedBooking />} />
           </Routes>
         </Content>
         <FooterComponent />
