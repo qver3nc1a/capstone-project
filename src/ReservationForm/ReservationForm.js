@@ -32,7 +32,7 @@ function ReservationForm({ availableTimes = [], dispatch , setCurrentView }) {
             label='Name'
             rules={[required('name')]}
             >
-            <Input placeholder='Enter your name' />
+            <Input placeholder='Enter your name' aria-required='true' aria-label='Name input field' />
         </Form.Item>
 
         <Form.Item
@@ -40,7 +40,7 @@ function ReservationForm({ availableTimes = [], dispatch , setCurrentView }) {
             label='Email'
             rules={[required('email')]}
             >
-            <Input placeholder='Enter your email' />
+            <Input placeholder='Enter your email' aria-required='true' aria-label='Email input field' />
         </Form.Item>
 
         <Form.Item
@@ -48,7 +48,7 @@ function ReservationForm({ availableTimes = [], dispatch , setCurrentView }) {
             label='Phone Number'
             rules={[required('phone')]}
             >
-            <Input placeholder='Enter your phone number' />
+            <Input placeholder='Enter your phone number' aria-required='true' aria-label='Phone number input field' />
         </Form.Item>
 
         <Form.Item
