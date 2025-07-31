@@ -6,7 +6,7 @@ function HeaderComponent() {
     return (
         <Row className='header' align='middle' justify='space-between'>
             <Col xs={24} md={6} lg={6} className='header_logo'>
-                <img src='/Small_Logo.png' alt='Little Lemon Logo' />
+                <img src='/images/Small_Logo.png' alt='Little Lemon Logo' />
             </Col>
             <Col xs={24} md={18}>
                 <Menu mode='horizontal' className='header_menu' overflowedIndicator={null}>

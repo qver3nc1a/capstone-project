@@ -24,7 +24,7 @@ function HeroComponent({ setCurrentView }) {
                     </Button>
                 </Col>
                 <Col xs={24} md={12} lg={12}className='hero_image'>
-                    <img src='/Hero_Dish.jpg' alt='Hero Dish' />
+                    <img src='/images/Hero_Dish.jpg' alt='Hero Dish' />
                 </Col>
             </Row>
         </section>
