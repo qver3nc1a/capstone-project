@@ -30,7 +30,7 @@ function FooterComponent() {
     <Footer className='footer'>
       <Row>
         <Col xs={24} md={6} lg={6} className='footer_logo'>
-          <img src='/Bigger_Logo.png' alt='Little Lemon Logo' />
+          <img src='/images/Bigger_Logo.png' alt='Little Lemon Logo' />
         </Col>
 
         <Col xs={24} md={6} lg={6}>

@@ -17,7 +17,7 @@ function AboutUsComponent() {
                         <p>Join us for a meal and experience the warmth of our family atmosphere.</p>
                     </Col>
                     <Col xs={24} md={12} lg={12} className='about-us_image'>
-                        <img src='/Owners.webp' alt='Owners' />
+                        <img src='images/Owners.webp' alt='Owners' />
                     </Col>
                 </Row>
             </section>

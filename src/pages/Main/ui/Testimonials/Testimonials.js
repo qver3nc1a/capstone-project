@@ -13,7 +13,7 @@ function TestimonialsComponent() {
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
                     <Card>
                         <Card.Meta
-                            avatar={<Avatar src="/CoolGirl_Avatar.png" />}
+                            avatar={<Avatar src="images/CoolGirl_Avatar.png" />}
                             title = 'Jade'
                             description="The best restaurant experience I've ever had! The food was delicious and the service was outstanding."
                         />
@@ -22,7 +22,7 @@ function TestimonialsComponent() {
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
                     <Card>
                         <Card.Meta
-                            avatar={<Avatar src="/Man_Avatar.png" />}
+                            avatar={<Avatar src="/images/Man_Avatar.png" />}
                             title = 'Xavier'
                             description="I had an amazing time! The ambiance was perfect and the staff was very attentive. The food was exquisite!"
                         />
@@ -31,7 +31,7 @@ function TestimonialsComponent() {
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
                     <Card>
                         <Card.Meta
-                            avatar={<Avatar src="/Girl_Avatar.png" />}
+                            avatar={<Avatar src="/images/Girl_Avatar.png" />}
                             title = 'Sophie'
                             description="The food was incredible and the service was top-notch! I can't wait to come back and try more dishes, so excited!"
                         />
@@ -40,7 +40,7 @@ function TestimonialsComponent() {
                     <Col xs={24} sm={12} md={6} lg={6} xl={6}>
                     <Card>
                         <Card.Meta
-                            avatar={<Avatar src="/CoolGuy_Avatar.png" />}
+                            avatar={<Avatar src="/images/CoolGuy_Avatar.png" />}
                             title = 'Peter'
                             description="I can't wait to come back! Such a wonderful experience. The staff was friendly and the food was delicious."
                         />
