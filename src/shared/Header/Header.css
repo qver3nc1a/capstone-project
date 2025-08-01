@@ -15,9 +15,11 @@
 }
 
 .header_menu {
+  float: right;
+  text-align: right;
+  margin-right: 50px;
   height: 70px;
   line-height: 70px;
-  justify-content: space-evenly;
   font-family: var(--karla);
   font-size: var(--p-font-size);
   font-weight: bold;

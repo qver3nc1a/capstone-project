@@ -4,7 +4,7 @@ import ReservationForm from "./ReservationForm";
 
 describe('ReservationForm', () => {
     test('Renders the ReservationForm heading', () => {
-       // render(<ReservationForm />);
+        render(<ReservationForm />);
         const headingElement = screen.getByText('Reserve a Table');
         expect(headingElement).toBeInTheDocument();
     });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Button, Card, Row, Col } from 'antd';
+import { Layout, Card, Row, Col } from 'antd';
 import './Specials.css';
 
 const { Content } = Layout;
