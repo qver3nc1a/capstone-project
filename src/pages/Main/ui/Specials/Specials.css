@@ -67,3 +67,5 @@ a:hover {
 .specials_menu-link:hover {
   color: var(--orange);
 }
+
+.specials__card { width: 100%; }

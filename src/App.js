@@ -1,5 +1,7 @@
 /* global fetchAPI */
 import React, { useReducer, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './App.css';
 import { Layout } from 'antd';
 
@@ -31,31 +33,36 @@ function App() {
   const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
   const [currentView, setCurrentView] = useState('home');
 
-  const renderView = () => {
-    if (currentView === 'reservation') {
-      return <ReservationForm availableTimes={availableTimes} dispatch={dispatch} setCurrentView={setCurrentView} />;
-    }
-    if (currentView === 'confirmed') {
-      return <ConfirmedBooking />;
-    }
-    return (
-      <>
-        <HeroComponent setCurrentView={setCurrentView} />
-        <SpecialsComponent />
-        <TestimonialsComponent />
-        <AboutComponent />
-      </>
-    );
-  };
-
   return (
-    <Layout>
-      <HeaderComponent />
-      <Content>
-        {renderView()}
-      </Content>
-      <FooterComponent />
-    </Layout>
+    <Router>
+      <Layout>
+        <HeaderComponent />
+        <Content>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <HeroComponent />
+                  <SpecialsComponent />
+                  <TestimonialsComponent />
+                  <AboutComponent />
+                </>
+              }
+            />
+            <Route
+              path='/reservation'
+              element={<ReservationForm availableTimes={availableTimes} dispatch={dispatch} />}
+            />
+            <Route
+              path='/confirmation'
+              element={<ConfirmedBooking />}
+            />
+          </Routes>
+        </Content>
+        <FooterComponent />
+      </Layout>
+    </Router>
   );
 }
 

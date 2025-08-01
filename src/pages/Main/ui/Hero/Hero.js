@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button, Row, Col } from 'antd';
 import './Hero.css';
+import { useNavigate } from 'react-router-dom';
 
-
-function HeroComponent({ setCurrentView }) {
+function HeroComponent() {
+    const navigate = useNavigate();
 
     const handleReserveTable = () => {
-        console.log('Reserve a Table button clicked');
-        setCurrentView('reservation');
+        navigate('/reservation');
     };
 
     return (
