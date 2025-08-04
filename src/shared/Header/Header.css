@@ -15,8 +15,7 @@
 }
 
 .header_menu {
-  float: right;
-  text-align: right;
+  justify-content: end;
   margin-right: 50px;
   height: 70px;
   line-height: 70px;

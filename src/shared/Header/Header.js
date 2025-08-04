@@ -4,7 +4,7 @@ import './Header.css';
 
 function HeaderComponent() {
     return (
-        <Row className='header' align='middle' justify='space-between'>
+        <Row className='header' align='middle'>
             <Col xs={24} md={6} lg={6} className='header_logo'>
                 <img src='/images/Small_Logo.png' alt='Little Lemon Logo' />
             </Col>
