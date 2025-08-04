@@ -1,15 +1,15 @@
 import React from 'react';
 
-import HeaderComponent from './shared/Header/Header';
-import FooterComponent from './shared/Footer/Footer';
-import ReservationForm from './pages/Reservation/ui/ReservationForm/ReservationForm';
+import HeaderComponent from '../../shared/Header/Header';
+import FooterComponent from '../../shared/Footer/Footer';
+import ReservationForm from './ui/ReservationForm/ReservationForm';
 
-function Reservation() {
+function Reservation({ dispatch, availableTimes }) {
     return (
         <>
             <HeaderComponent />
             <main>
-                <ReservationForm />
+                <ReservationForm dispatch={dispatch} availableTimes={availableTimes}/>
             </main>
             <FooterComponent />
         </>

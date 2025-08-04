@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Button, Card, Row, Col, Avatar } from 'antd';
+import { Layout, Button, Card, Row, Col, Avatar } from 'antd';
 import './Testimonials.css';
 
 const { Content } = Layout;

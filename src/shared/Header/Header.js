@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Row, Col } from 'antd';
+import { Menu, Row, Col } from 'antd';
 import './Header.css';
 
 function HeaderComponent() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Button, Card, Row, Col } from 'antd';
+import { Layout, Row, Col } from 'antd';
 import './Footer.css';
 
 const { Footer } = Layout;
